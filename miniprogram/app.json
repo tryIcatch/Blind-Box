@@ -1,0 +1,18 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/selectpage/select",
+    "pages/lovermatch/lovermatch",
+    "pages/blindmatch/blindmatch",
+    "pages/getinfor/infor"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FFF0F5",
+    "navigationBarTitleText": "一线牵",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

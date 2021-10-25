@@ -1,0 +1,42 @@
+<!--pages/getinfor/infor.wxml
+-->
+
+<view class="box">
+   <image class='background' src="../img/back8.jpg" mode="aspectFill"></image>
+   <view class="content">
+    <view class="avatarbox">
+      <image class="avatar" src="{{avatar}}"></image>
+    </view>
+    <view class="nickbox">
+        <text class="nick">昵称：{{nick}}</text>
+    </view>
+    <view class="linebox">
+      <view class="line"></view>
+    </view>
+    <view class="substancebox">
+      <view class="substance">
+         <view class="firstbox">
+                   <view class="name">姓名:{{name}}</view>
+                 <view class="sex">性别:{{sex}}</view>
+         </view>
+         <view class="firstbox">
+            <view class="age">年龄:{{age}}</view>
+            <view class="height">身高:{{height}}</view>   
+         </view>
+         <view class="secondbox">
+            <view class="phone">手机号:{{phone}}</view>
+         </view>
+         <view class="secondbox">
+            <view class="wxnumb">微信号:{{wxnumb}}</view>   
+         </view>
+         <view class="secondbox">
+            <view class="introduce">自我介绍:{{introduce}}</view>   
+         </view>
+      </view>
+    </view>
+    <view class="get">
+          <button class="btn"  bindtap="get">拿下</button>
+    </view>
+   </view>
+
+</view>

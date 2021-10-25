@@ -1,0 +1,65 @@
+.sch {
+ width: 93%;
+}
+.schbox {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.lovermatch image, .blindbox image{
+  width: 80px;
+  height: 80px;
+}
+.selectbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 80px;
+  color:	black;
+  font-size:13px;
+  padding-left: 8px;
+}
+.lovermatch , .blindbox {
+  display: flex;
+  flex-direction: column;
+  
+}
+.lovermatch text, .blindbox text{
+  padding-top: 10px;
+}
+.blindbox text{
+  color:	black;
+  font-size:13px;
+  padding-left: 13px;
+}
+.wutbox {
+  display: flex;
+  flex-direction: row;
+  margin-left: 70px;
+  margin-top: 30px;
+}
+page{
+  height: 100%;
+  background:#FFF0F5;
+}
+.wutbox image{
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+}
+
+.wutbox text{
+  line-height: 60px;
+  padding-left: 20px;
+}
+.frequency{
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  margin:20px 80px 5px 60px ;
+}
+.frequency text {
+    font-size:10px;
+  	color:	#DCDCDC;
+}

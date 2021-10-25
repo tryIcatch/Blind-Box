@@ -1,0 +1,75 @@
+/* pages/blindmatch/blindmatch.wxss */
+.head{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.openbox{
+  width: 90%;
+  margin:0 auto;
+}
+.sexbox{
+  display: flex;
+  flex-direction:row;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.girl{
+  display: flex;
+  width: 35%;
+  height: 150px;
+  background: pink;
+  flex-direction: column;
+
+}
+.boy{
+  display: flex;
+  width: 35%;
+  height: 150px;
+  background:#87CEFA;
+  flex-direction: column;
+}
+.open{
+  width: 80%;
+  height: 30px;
+  border: 3rpx solid #363636;
+  border-radius: 10rpx;
+  background:#363636;
+  color: white;
+  position: relative;
+  top: 15px;
+  margin: 0 auto;
+
+}
+.open text{
+  font-size: 10px;
+  margin: -33px 0 0 33px;
+}
+.girlimg{
+  width: 80%;
+  margin:0 auto;
+  padding-top: 10px;
+}
+.boyimg{
+  width: 80%;
+  margin:0 auto;
+  padding-top: 10px;
+}
+
+.wutbox {
+  display: flex;
+  flex-direction: row;
+  margin-left: 70px;
+  margin-top: 43px;
+}
+
+.wutbox image{
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+}
+
+.wutbox text{
+  line-height: 60px;
+  padding-left: 20px;
+}

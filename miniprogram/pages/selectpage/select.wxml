@@ -1,0 +1,36 @@
+
+
+
+
+  <swiper  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" style="height:{{height}}">
+        <block wx:for="{{url}}" wx:key="*this">
+          <swiper-item>
+            <view class="schbox" >
+              <image src="{{item}}" class="sch"  bindload='goheight' mode="widthFix"></image>
+            </view>
+          </swiper-item>
+        </block>
+      </swiper>
+
+
+
+
+
+
+  
+<view class="selectbox">
+  <view class="lovermatch">
+      <image bindtap="lovermatch"  src="../img/lovermatch.png"></image>
+      <text>投递纸条</text>
+  </view>
+  <view class="blindbox">
+      <image bindtap="blindmatch"  style="{{status}}"   src="../img/blindbox.png"></image>
+      <text>抽取盲盒</text>
+  </view>
+</view>
+
+<view class="frequency"><text>今日可用抽取次数：{{frequency}}</text>  </view>
+<view class="wutbox">
+<image src="../img/wut.png"></image>
+<text>武昌理工学院</text>
+</view>

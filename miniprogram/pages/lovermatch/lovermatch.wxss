@@ -1,0 +1,156 @@
+/* pages/lovermatchoage/lovermatch.wxss */
+.box{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.headimg{
+  width: 90%;
+  margin:0 auto;
+}
+.heading{
+  font-size: 10px;
+  color: 	#CDC9C9;
+  width: 90%;
+  padding-top: 10px;
+  margin:0 auto;
+}
+.view-contain-ti {
+  display: flex;
+  height: 25px;
+  margin: 12px;
+  border: 3rpx solid #faca82;
+  border-radius: 10rpx;
+}
+.verify-container{
+  height: 24px;
+  border: 3rpx solid #faca82;
+  border-radius: 10rpx;
+  margin:  12px 10px 12px 12px;
+}
+.verifybox{
+  display: flex;
+  flex-direction: row;
+}
+.getverify {
+  width: 20px;
+  height: 33px;
+  margin-top: 10px;
+  margin-right: 12px;
+  border-radius: 12rpx;
+  background: #faca82;
+}
+.send{
+  line-height: 5px;
+  color: white;
+  
+}
+.text-ti {
+  position: absolute;
+  font-size: 12px;
+  background: white;
+  margin: -10px 0 0 10px;
+  padding: 0 5px;
+  color: rgb(144, 147, 167);
+}
+
+.input1 {
+  margin:  auto 10px;
+}
+.inputbox {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 32rpx;
+  color: #353535;
+  margin:0 auto;
+}
+.inptxt {
+  white-space: nowrap;
+}
+
+.inpbox {
+  width: 100%;
+  margin-left: 20rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.inp {
+    position: relative;
+    width:100%;
+    height:80rpx;
+  }
+
+.telinpbox {
+    width: 240rpx;
+    overflow: hidden;
+    margin-top: 10rpx;
+  }
+.telinp {
+      width: 55rpx;
+      height: 55rpx;
+      overflow: hidden;
+      margin-left: 25rpx;
+    }
+  
+
+.radiogroup {
+    display: flex;
+    flex-direction: row;
+  }
+.radiobox {
+      display: flex;
+      flex-direction: row;
+      margin-left: 50rpx;
+    }
+
+    .editerbox{
+      width: 90%;
+      height: 50px;
+      margin:0 auto;
+      border: 3rpx solid #faca82;
+      border-radius: 10rpx;
+      padding: 10rpx;
+      margin-top: 10px;
+    }
+   .editer {
+      color: #666666;
+      font-size: 30rpx;
+      font-weight: 400;
+      font-style: normal;
+
+      }
+
+.submit{
+  margin-top: 30px;
+  background: #87CEFA;
+  color:white;
+}
+
+    checkbox .wx-checkbox-input{
+      border-radius: 50%;/* 圆角 */
+      width: 40rpx; /* 背景的宽 */
+      height: 40rpx; /* 背景的高 */
+      border: 1rpx solid #aaa; /* 边框颜色*/
+   }
+   /* 选中后的--样式更改 */
+   checkbox .wx-checkbox-input.wx-checkbox-input-checked{
+      border: none;/*无边框*/
+      background: red;/*背景色红色*/
+   }
+   /* 选中后的--对勾的样式更改 （可根据自己需求修改） */
+   checkbox .wx-checkbox-input.wx-checkbox-input-checked::before{
+      border-radius: 50%;/* 圆角 */
+      width: 40rpx;/* 选中后对勾大小，不要超过背景的尺寸 */
+      height: 40rpx;/* 选中后对勾大小，不要超过背景的尺寸 */
+      line-height: 40rpx;
+      text-align: center;/* 文字居中显示*/
+      font-size:30rpx; /* 对勾大小 30rpx */
+      color:#fff; /* 对勾颜色 白色 */
+      background: transparent;
+      transform:translate(-50%, -50%) scale(1);
+      -webkit-transform:translate(-50%, -50%) scale(1);
+   }

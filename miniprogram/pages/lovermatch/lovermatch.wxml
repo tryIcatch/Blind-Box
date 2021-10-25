@@ -1,0 +1,62 @@
+<!--pages/lovermatchoage/lovermatch.wxml-->
+<view style="height:10px"></view>
+<view class="box">
+ <image class="headimg" src="../img/lovers.jpg" mode="widthFix"></image>
+<text class="heading">一线牵由后台根据用户报名资料进行匹配，为保证匹配准确度，请尽量详细地填写真实信息。所有填写信息会为你严格保密，只会对匹配到你的人公开。</text>
+<form bindsubmit='getinfor'>
+<view class="view-contain-ti">
+    <text class="text-ti">姓名</text>
+    <input class="input1" name="name" bindinput="getname"></input>
+</view>
+<view class="inputbox">
+        <view class="inptxt">性别</view>
+        <view class="inpbox">
+          <radio-group bindchange="radioChange" class="inp radiogroup">
+            <view class="radiobox" wx:for="{{sex}}" wx:key="value">
+              <radio value="{{item.id}}" color="#ff0000" checked="{{item.checked}}"/>
+              <view class="radiotxt">{{item.value}}</view>
+            </view>
+          </radio-group>          
+        </view>
+      </view>
+
+ <view class="view-contain-ti">
+    <text class="text-ti">年龄</text>
+    <input class="input1"  bindinput="getage"></input>
+</view>
+ <view class="view-contain-ti">
+    <text class="text-ti">身高(cm)</text>
+    <input class="input1" name="height" bindinput="getheight"></input>
+</view>
+
+<view class="view-contain-ti">
+    <text class="text-ti">微信号</text>
+    <input class="input1" name="wxnumb" bindinput="getwxnumb"></input>
+</view>
+<view class="view-contain-ti">
+    <text class="text-ti">手机号</text>
+    <input class="input1" name="phone" bindinput="getphone"></input>
+</view>
+
+
+
+<view class="editerbox">
+  <editor class="editer" placeholder="认真地做一次自我介绍，让ta更好的认识你吧" bindinput="introduce"></editor>
+</view>
+</form>
+<view class="verifybox">
+  <view class="verify-container">
+    <text class="text-ti">验证码</text>
+    <input class="input1" name="verify" bindinput="getverify"></input>
+</view>
+<button class="getverify" bindtap="sendverify" disabled="{{status}}"  style="width:88px "><text class="send" wx:if="{{hide}}">发送</text>
+<text wx:if="{{show}}">{{second}}</text></button>
+</view>
+
+<button class="submit" bindtap="submit">提交</button>
+
+</view>
+
+ 
+
+

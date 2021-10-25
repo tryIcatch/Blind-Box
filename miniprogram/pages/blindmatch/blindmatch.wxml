@@ -1,0 +1,22 @@
+<!--pages/blindmatch/blindmatch.wxml-->
+<view style="width:100%;height:100%;background:#FFF0F5">
+<view style="height:45px"></view>
+<view class="head">
+  <image class="openbox" src="../img/box.png" mode="widthFix"></image>
+  <view class="sexbox">
+   <view class="boy"> 
+     <image class="boyimg" src="../img/boy.jpg" mode="widthFix"></image>
+    <view bindtap="openboy" class="open"><text>打开</text></view>
+  </view>
+   <view class="girl">
+     <image class="girlimg" src="../img/girl.jpg" mode="widthFix"></image>
+     <view bindtap="opengirl" class="open"><text>打开</text></view>
+  </view>
+ </view>
+</view>
+<view class="wutbox">
+<image src="../img/wut.png"></image>
+<text>武昌理工学院</text>
+</view>
+
+</view>

@@ -1,0 +1,71 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/selectpage/select",
+          "pathName": "pages/selectpage/select",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/selectpage/select",
+          "pathName": "pages/lovermatch/lovermatch",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/blindmatch/blindmatch",
+          "pathName": "pages/blindmatch/blindmatch",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/lovermatch/lovermatch",
+          "pathName": "pages/lovermatch/lovermatch",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/getinfor/infor",
+          "pathName": "pages/getinfor/infor",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/",
+          "pathName": "pages/getinfor/infor",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/selectpage/select",
+          "pathName": "pages/selectpage/select",
+          "scene": null
+        }
+      ]
+    }
+  }
+}
