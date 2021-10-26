@@ -18,6 +18,7 @@ Page({
     status:'',
     frequency:0,
 
+
     
     },
     lovermatch: function(){
@@ -30,10 +31,29 @@ Page({
       var that =this;
       wx.getStorage({
         key: 'phone',
-        success:function(){
-          wx.navigateTo({
-            url: '../blindmatch/blindmatch',
-          })
+        success:function(p){
+          if(that.data.frequency>0){
+            wx.navigateTo({
+              url: '../blindmatch/blindmatch',
+            })
+            wx.request({
+              url: config.url+'frequency/',
+              method:'GET',
+              data:{
+                phone:p.data
+              },
+              success:function(e){
+                   that.setData({
+                     frequency:e.data
+                   })
+              }
+            })
+          }else{
+            wx.showToast({
+              title: '次数不够，明天再来吧',
+              icon:'none'
+            })
+          }
            
         },
         fail: function(){
@@ -66,11 +86,15 @@ Page({
             },
             header:{
               'content-type' : 'application/x-www-form-urlencoded',
+            },
+            success:function(e){
+   
+              that.setData({frequency:e.data['frequency']})
             }
           }) 
         },
         fail:function(){
-           that.setData({frequency:0})
+        
         }
     
     })

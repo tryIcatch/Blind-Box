@@ -63,6 +63,12 @@
         {
           "name": "pages/selectpage/select",
           "pathName": "pages/selectpage/select",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/selectpage/select",
+          "pathName": "pages/selectpage/select",
           "scene": null
         }
       ]

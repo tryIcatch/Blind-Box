@@ -1,6 +1,5 @@
 // pages/lovermatchoage/lovermatch.js
 import {config} from '../config'
-import cookies from '../weapp-cookie'
 
 Component({
   
@@ -281,7 +280,7 @@ Component({
         })
       }else {
         var that=this;
-   
+        var date=new Date(new Date()).toLocaleDateString()
         console.log(this.data.nick)
         console.log(this.data.avatar)
         wx.request({
@@ -297,6 +296,8 @@ Component({
             phone:this.data.phone,
             avatar:this.data.avatar,
             nick:this.data.nick,
+            date:date,
+            state:true,
             "csrfmiddlewaretoken":'csrftoken=Tnc4FuckRWAzmn8TbAzve1leNIYtyjX5JfmbdrX6RzLpr3DBinGdQTTer9bgehyo'
           },
           header:{
@@ -304,7 +305,15 @@ Component({
             'Cookie':'csrftoken=Tnc4FuckRWAzmn8TbAzve1leNIYtyjX5JfmbdrX6RzLpr3DBinGdQTTer9bgehyo',
           },
           success:function name(params) {
-            console.log(params)
+           if(params.data==200){
+
+           }
+           else{
+             wx.showToast({
+               title: '已经投递过了',
+               icon:"none"
+             })
+           }
           },
           fail:function name(params) {
             console.log(params)

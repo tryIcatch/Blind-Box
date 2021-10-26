@@ -1,3 +1,5 @@
+const { config } = require("../config")
+
 // pages/blindmatch/blindmatch.js
 Component({
   /**
@@ -20,14 +22,59 @@ Component({
   methods: {
 
     openboy: function(){
-      wx.navigateTo({
-        url: '../getinfor/infor?sex=1',
+      wx.request({
+        url: config.url+'randomselect/',
+        method:"POST",
+        data:{
+          sex:"男"
+        },
+        header:{
+          'content-type' : 'application/x-www-form-urlencoded',
+        },
+        success : function(e){
+         
+          if(e["data"]["status"]=="null"){
+            wx.showToast({
+              title: '还没有人投入纸条噢',
+              icon:"none"
+            })
+          }else{
+            wx.navigateTo({
+              url: '../getinfor/infor?sex=1',
+            })
+          }
+          
+          
+        }
       })
+   
     },
    
   opengirl: function(){
-    wx.navigateTo({
-      url: '../getinfor/infor?sex=2',
+    wx.request({
+      url: config.url+'randomselect/',
+      method:"POST",
+      data:{
+        sex:"女"
+      },
+      header:{
+        'content-type' : 'application/x-www-form-urlencoded',
+      },
+      success : function(e){
+       
+        if(e["data"]["status"]=="null"){
+          wx.showToast({
+            title: '还没有人投入纸条噢',
+            icon:"none"
+          })
+        }else{
+          wx.navigateTo({
+            url: '../getinfor/infor?sex=2',
+          })
+        }
+        
+        
+      }
     })
   },
   }

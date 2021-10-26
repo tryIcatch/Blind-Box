@@ -17,7 +17,7 @@
 .girl{
   display: flex;
   width: 35%;
-  height: 150px;
+  height: 160px;
   background: pink;
   flex-direction: column;
 
@@ -25,9 +25,12 @@
 .boy{
   display: flex;
   width: 35%;
-  height: 150px;
+  height: 160px;
   background:#87CEFA;
   flex-direction: column;
+}
+page{
+  background: #FFF0F5;
 }
 .open{
   width: 80%;
@@ -59,8 +62,9 @@
 .wutbox {
   display: flex;
   flex-direction: row;
-  margin-left: 70px;
-  margin-top: 43px;
+ justify-content: center;
+ position: relative;
+ top: 50px;
 }
 
 .wutbox image{

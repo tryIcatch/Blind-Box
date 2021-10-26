@@ -36,8 +36,9 @@
 .wutbox {
   display: flex;
   flex-direction: row;
-  margin-left: 70px;
-  margin-top: 30px;
+ justify-content: center;
+ position: relative;
+ top: 80px;
 }
 page{
   height: 100%;
